@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Mukesh T.R | Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Portfolio of Sai Mukesh T.R, Vulnerability Assessment & Penetration Testing | Application Security.">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sai Mukesh T.R | Cybersecurity Portfolio">
+    <meta property="og:description" content="Final-year Cybersecurity student specializing in VAPT, web application security, and secure backend development.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <div class="ambient-1"></div>
+    <div class="ambient-2"></div>
+    <div class="cursor"></div>
+
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-cube">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <defs>
+                        <linearGradient id="cubeGrad" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#3a3a3a" />
+                            <stop offset="100%" stop-color="#0a0a0a" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M17 3 L29 9 L29 21 L17 27 L17 15 L5 9 Z" fill="url(#cubeGrad)" stroke="#000" stroke-width="0.5" />
+                    <path d="M5 9 L17 15 L17 27 L5 21 Z" fill="#2a2a2a" stroke="#000" stroke-width="0.5" />
+                    <path d="M17 3 L29 9 L17 15 L5 9 Z" fill="#444" stroke="#000" stroke-width="0.5" />
+                </svg>
+            </span>
+            <span>SAI MUKESH</span>
+        </div>
+        <nav class="header-nav">
+            <a href="#about">About</a>
+            <a href="#work">Projects</a>
+            <a href="#education">Education & Experience</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="header-btn hide-mobile">Get in touch
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </header>
+
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#work" class="mobile-link">Projects</a>
+            <a href="#education" class="mobile-link">Education & Experience</a>
+            <a href="#achievements" class="mobile-link">Achievements</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="https://drive.google.com/file/d/1ok4M4hi8jQ9KmPhTgmKY99sff_E2QDzB/view?usp=sharing" target="_blank" class="mobile-link">Resume</a>
+        </nav>
+    </div>
+
+    <main id="about" class="hero">
+        <div class="hero-top">
+        <div class="hero-left">
+            <h1 class="hero-title">
+                <span class="title-line"><span class="title-inner">Vulnerability</span></span>
+                <span class="title-line"><span class="title-inner">Assessment &</span></span>
+                <span class="title-line"><span class="title-inner">Penetration</span></span>
+            </h1>
+            <p class="hero-desc">Final-year Cybersecurity student with hands-on experience in VAPT, web application security, and secure backend development.</p>
+            <div class="hero-btns">
+                <a href="#work" class="cta-btn">View My Projects
+                    <span class="cta-arrow">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </span>
+                </a>
+                <a href="https://drive.google.com/file/d/1ok4M4hi8jQ9KmPhTgmKY99sff_E2QDzB/view?usp=sharing" target="_blank" class="btn-secondary">Download Resume</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="constellation" id="constellation">
+                <!-- Abstract visual representation -->
+                <div class="constellation-inner" id="constellationInner">
+                    
+                    <!-- Burp Suite -->
+                    <div class="tile size-main mint tile-expand" style="top: 80px; left: 60px;">
+                        <div class="tile-inner">
+                            <div class="tile-icon">
+                                <img src="https://www.kali.org/tools/burpsuite/images/burpsuite-logo.svg" alt="Burp Suite" draggable="false">
+                            </div>
+                            <span class="tile-label">Burp Suite</span>
+                        </div>
+                    </div>
+
+                    <!-- Metasploit -->
+                    <div class="tile size-big black tile-db" style="top: 150px; left: 240px;">
+                        <div class="tile-inner">
+                            <div class="tile-icon">
+                                <img src="https://www.kali.org/tools/metasploit-framework/images/metasploit-framework-logo.svg" alt="Metasploit" draggable="false">
+                            </div>
+                            <span class="tile-label">Metasploit</span>
+                        </div>
+                    </div>
+
+                    <!-- Hashcat -->
+                    <div class="tile size-main yellow tile-chart" style="top: 290px; left: 100px;">
+                        <div class="tile-inner">
+                            <div class="tile-icon">
+                                <img src="https://www.kali.org/tools/hashcat/images/hashcat-logo.svg" alt="Hashcat" draggable="false">
+                            </div>
+                            <span class="tile-label">Hashcat</span>
+                        </div>
+                    </div>
+
+                    <!-- Code OSS -->
+                    <div class="tile size-main purple tile-cloud" style="top: 320px; left: 340px;">
+                        <div class="tile-inner">
+                            <div class="tile-icon">
+                                <img src="https://www.kali.org/tools/code-oss/images/code-oss-logo.svg" alt="Code OSS" draggable="false">
+                            </div>
+                            <span class="tile-label">Code OSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Ghidra -->
+                    <div class="tile size-main mint tile-expand2" style="top: 480px; left: 200px;">
+                        <div class="tile-inner">
+                            <div class="tile-icon">
+                                <img src="https://www.kali.org/tools/ghidra/images/ghidra-logo.svg" alt="Ghidra" draggable="false">
+                            </div>
+                            <span class="tile-label">Ghidra</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div><!-- end hero-top -->
+        <!-- Stats integrated inside the about/hero section -->
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num" data-num="10">+0<span class="accent">+</span></div>
+                <div class="stat-label">Vulns Disclosed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num" data-num="900">0<span class="accent">+</span></div>
+                <div class="stat-label">CTF Participants</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num" data-num="6">0<span class="accent"></span></div>
+                <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num" data-num="3">0<span class="accent">+</span></div>
+                <div class="stat-label">Core Projects</div>
+            </div>
+        </div>
+    </main>
+
+    <section id="work" class="features">
+        <div class="features-head">
+            <div>
+                <div class="section-eyebrow">01 / Security Projects</div>
+                <h2 class="features-title">Showcasing offensive and defensive security craft.</h2>
+            </div>
+            <div class="features-meta">
+                LATEST PROJECTS<br>
+                2024 - 2026<br>
+                HARDWARE & WEB
+            </div>
+        </div>
+
+        <div class="feature-cards">
+            <a href="https://github.com/Rsaimukesh" target="_blank" class="feature-card fc-mint">
+                <div class="fc-num">01 — RAVEN Platform</div>
+                <h3>Hardware Security Research.</h3>
+                <p>Developing a portable cybersecurity platform for wireless security assessment, network reconnaissance, and hardware security research using Raspberry Pi Zero 2 W.</p>
+                <div class="fc-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                </div>
+            </a>
+
+            <a href="https://github.com/Rsaimukesh" target="_blank" class="feature-card fc-yellow">
+                <div class="fc-num">02 — WebSec Audit</div>
+                <h3>Automated Web Assessment.</h3>
+                <p>Developed a web security framework combining signature-based scanning with dynamic analysis to identify SQLi, XSS, and open ports across 20+ apps.</p>
+                <div class="fc-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </div>
+            </a>
+
+            <a href="https://github.com/Rsaimukesh" target="_blank" class="feature-card fc-purple">
+                <div class="fc-num">03 — TorConsensus</div>
+                <h3>Forensic Research Tool.</h3>
+                <p>Implemented Flow Time-Density Correlation (FTDC) to analyze Tor network traffic without decrypting it, built with a web-based visualization interface.</p>
+                <div class="fc-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="education" class="about-section">
+        <div class="about-container">
+            <div class="about-col">
+                <div class="section-eyebrow">02 / Experience & Education</div>
+                <h2 class="about-title">Background & Work</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Core Member, ExploitX</h4>
+                        <p class="date">Feb 2025 – Present</p>
+                        <p>Organize CTF competitions and cybersecurity workshops for 900+ participants. Manage CTF infrastructure and deploy challenges.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Backend Developer, PICABORD Technologies Pvt. Ltd.</h4>
+                        <p class="date">Jun 2025 – Sep 2025</p>
+                        <p>Developed secure Flask REST APIs and optimized database queries for a CRM system, improving response time by 30%. Implemented secure authentication and authorization.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>B.E. in Cybersecurity, Chennai Institute of Technology</h4>
+                        <p class="date">2024 – 2027</p>
+                        <p>CGPA: 7.25/10. Focused on network security, web application security, and cryptography.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-col">
+                <div class="section-eyebrow">03 / Skills</div>
+                <h2 class="about-title">Technical Arsenal</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Security Domains</h4>
+                        <p>VAPT, Web & Android App Security, Network Security, Digital Forensics, Threat Analysis, Cryptanalysis</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools</h4>
+                        <p>Burp Suite, Nmap, Wireshark, Metasploit, SQLMap, OWASP ZAP, Splunk, Ghidra</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Languages & OS</h4>
+                        <p>Python, C, Bash/Shell, Linux, Windows</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks & Standards</h4>
+                        <p>OWASP Top 10, MITRE ATT&CK, CVSS, Secure SDLC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="quote-section">
+        <span class="quote-mark">"</span>
+        <blockquote class="quote-text">Reported high-severity vulnerabilities in the UIDAI Aadhaar platform through responsible disclosure, formally acknowledged by CERT-In.</blockquote>
+        <div class="quote-author">— Runner-up, Tamil Nadu Police Hackathon 2025</div>
+    </section>
+
+    <section id="contact" class="final-cta">
+        <div class="final-cta-card">
+            <span class="orb orb-1"></span>
+            <span class="orb orb-2"></span>
+            <h2 class="final-cta-h2">Secure your apps with <span class="accent">confidence.</span></h2>
+            <p>Passionate about strengthening application and infrastructure security through proactive testing and responsible disclosure. Reach out for collaboration.</p>
+            <a href="mailto:saim.cyber17@gmail.com" class="cta-btn">saim.cyber17@gmail.com
+                <span class="cta-arrow">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h3>Sai Mukesh T.R</h3>
+                <p>Cybersecurity Student | VAPT | Application Security</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <a href="https://linkedin.com/in/saimukesh172006" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Rsaimukesh" target="_blank">GitHub</a>
+                    <a href="mailto:saim.cyber17@gmail.com">Email</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Info</h4>
+                    <a href="#work">Projects</a>
+                    <a href="#achievements">Achievements</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://drive.google.com/file/d/1ok4M4hi8jQ9KmPhTgmKY99sff_E2QDzB/view?usp=sharing" target="_blank">Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Sai Mukesh T.R.</span>
+            <span>Ph: +91 90802 11832</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
